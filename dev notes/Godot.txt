@@ -1,0 +1,17 @@
+-You can see and edit input actions in your project by going to Project -> Project Settings and clicking on the Input Map tab
+
+---------------------------------------------------------------
+
+Use the Remote tab on the left-hand side while the game is running to inspect objects at runtime
+
+---------------------------------------------------------------
+
+-Signals are messages that nodes emit when something specific happens to them, like a button being pressed. Other nodes can connect to that signal and call a function when the event occurs
+-Signals are a delegation mechanism built into Godot that allows one game object to react to a change in another without them referencing one another
+
+-connect the signal to a node. The node needs a receiver method, a function that Godot will call when the Button emits the signal. The editor generates one for you. By convention, we name these callback methods "_on_node_name_signal_name"
+
+---------------------------------------------------------------
+
+-Tilesets are for organizing and managing your tiles
+-Tilemaps are for painting tiles onto the world
