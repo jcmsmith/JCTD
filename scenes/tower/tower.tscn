@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf24txjyju618"]
+
+[ext_resource type="Texture2D" uid="uid://b00mrw3sjv0oe" path="res://assets/tiles/tower1.png" id="1_mg2hd"]
+
+[node name="Tower" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mg2hd")
+centered = false
