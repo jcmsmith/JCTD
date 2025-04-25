@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cbaq0gif675h2"]
 
 [ext_resource type="Script" uid="uid://dkiwhut3vkeoo" path="res://scenes/highlight_tile/highlight_tile.gd" id="1_w814l"]
-[ext_resource type="Texture2D" uid="uid://bo13j4fr4i686" path="res://assets/tiles/highlight.png" id="2_1j55e"]
+[ext_resource type="Texture2D" uid="uid://bxor7ccwkbnkx" path="res://assets/tiles/highlight.png" id="2_1j55e"]
 
 [node name="HighlightTile" type="Node2D"]
 script = ExtResource("1_w814l")
