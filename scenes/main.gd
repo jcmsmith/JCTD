@@ -6,14 +6,21 @@ extends Node2D
 @onready var highlight_tile: HighlightTile = $HighlightTile
 
 const BUILDABLE : String = "buildable"
+const TOWER_GROUP : String = "TOWER_GROUP"
+
+var used_tiles : Array[Vector2i] = []
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("left_mouse"):
 		var cell_position : Vector2i = tile_map_layer.local_to_map(tile_map_layer.get_local_mouse_position())
 		
+		if used_tiles.has(cell_position):
+			return
+		
 		var cell_data = tile_map_layer.get_cell_tile_data(cell_position).get_custom_data(BUILDABLE)
 		
 		if cell_data == true:
+			used_tiles.append(cell_position)
 			place_tower(cell_position)
 
 
@@ -23,4 +30,8 @@ func place_tower(cell_position : Vector2i) -> void:
 	
 	#I don't really get why we have to multiply by 64, but it has to do with local_to_map
 	new_tower.position = cell_position * 64
+	
+	new_tower.add_to_group(TOWER_GROUP)
+	
+	print_debug(get_tree().get_nodes_in_group(TOWER_GROUP))
 	
