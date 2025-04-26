@@ -1,5 +1,5 @@
 class_name BuildingManager
-extends Node2D
+extends Node
 
 @export var tile_map_layer : TileMapLayer = null
 
