@@ -2,7 +2,9 @@
 
 ---------------------------------------------------------------
 
-Use the Remote tab on the left-hand side while the game is running to inspect objects at runtime
+-Use the Remote tab on the left-hand side while the game is running to inspect objects at runtime
+
+-Use Groups (eg some_node.add_to_group()) to organize objects
 
 ---------------------------------------------------------------
 

@@ -2,6 +2,8 @@
 
 CTRL+Click a function to jump to it's definition
 
+CTRL+Shift+A to quickly add a child scene
+
 @export var variable_name : PackedScene = null
 	-REMEMBER: add packed scene to object that the script is attached to via the right-hand Inspector window
 
