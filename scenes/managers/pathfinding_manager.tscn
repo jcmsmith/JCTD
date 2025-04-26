@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dwtd27gmkoa6o"]
+
+[node name="PathfindingManager" type="Node"]
