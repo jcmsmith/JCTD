@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=4 uid="uid://cwpav4uwpf41o"]
+[gd_scene load_steps=13 format=4 uid="uid://cwpav4uwpf41o"]
 
 [ext_resource type="Texture2D" uid="uid://cmi3cmji7nn20" path="res://assets/tiles/towerDefense_tilesheet.png" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://btflcvxqu4v7b" path="res://scenes/main.gd" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://cbaq0gif675h2" path="res://scenes/highlight_tile/highlight_tile.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bf24txjyju618" path="res://scenes/tower/tower.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bsro43xest666" path="res://scenes/managers/building_manager.tscn" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://bfban8ocjmdnk" path="res://scenes/spawners/enemy_spawner.tscn" id="6_tefeu"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0wfyh"]
 vertices = PackedVector2Array(32, 32, -32, 32, -32, -32, 32, -32)
@@ -103,3 +104,5 @@ position = Vector2(707, 417)
 zoom = Vector2(0.835, 0.835)
 
 [node name="HighlightTile" parent="." instance=ExtResource("2_0wfyh")]
+
+[node name="EnemySpawner" parent="." instance=ExtResource("6_tefeu")]
