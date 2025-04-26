@@ -1,16 +1,16 @@
 ---------------------------------------------------------------
 
-CTRL+Click a function to jump to it's definition
+-CTRL+Click a function to jump to it's definition
 
-CTRL+Shift+A to quickly add a child scene
+-CTRL+Shift+A to quickly add a child scene
 
-@export var variable_name : PackedScene = null
+-@export var variable_name : PackedScene = null
 	-REMEMBER: add packed scene to object that the script is attached to via the right-hand Inspector window
 
+-strings use Python's old clunky method for interpolation: "string text here: %s" % variable_name
+	-I miss f-strings :(
 
----------------------------------------------------------------
-
-To quickly add an onready var for scene objects: 
+-To quickly add an onready var for scene objects: 
 	-drag objects from the left-hand Scene window into the script and hold CTRL before releasing
 
 ---------------------------------------------------------------
